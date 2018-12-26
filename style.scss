@@ -26,7 +26,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 880px;
   padding: 0 10px;
   width: 100%;
 }
@@ -326,9 +326,9 @@ img {
 
 .site-avatar {
   float: left;
-  width: 70px;
+  width: 200px;
   height: 70px;
-  margin-right: 15px;
+  margin-right: 25px;
 
   @include mobile {
     float: none;
@@ -385,7 +385,7 @@ nav {
   }
 
   a {
-    margin-left: 20px;
+    margin-left: 7px;
     color: $darkGray;
     text-align: right;
     font-weight: 300;
