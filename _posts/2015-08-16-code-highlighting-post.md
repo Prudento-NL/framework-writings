@@ -2,6 +2,7 @@
 layout: post
 title: "Syntax Highlighting Post"
 tags: [sample post, code, highlighting]
+date: 2015-08-16
 comments: true
 ---
 
