@@ -1,5 +1,7 @@
 <head>
-  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.domain }}</title>
+  <!-- favicon - The simple way (one size and one link tag)-->
+  <link rel="shortcut icon" type="image/png" href="{{ site.favicon }}"
 
   {% include meta.html %}
   {% include fonts.html %}
@@ -9,8 +11,6 @@
   <![endif]-->
 
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-  <!-- favicon - The simple way (one size and one link tag)-->
-  <link rel="shortcut icon" type="image/png" href="{{ site.favicon }}"
   <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
   <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
