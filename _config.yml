@@ -28,6 +28,8 @@ navigation:
     url: /archive
   - name: Tags
     url: /tags
+  - name: Search
+    url: /search
   - name: Theme
     url: https://github.com/AWEEKJ/kiko-now
 
