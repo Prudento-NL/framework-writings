@@ -22,6 +22,8 @@ navigation:
     url: /archive
   - name: Tags
     url: /tags
+  - name: Browse
+    url: /browse
   - name: Search
     url: /search
   # - name: Theme
