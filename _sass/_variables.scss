@@ -78,6 +78,12 @@ $dt-width: 180px;
 $dt-dd-space: 20px;
 $dd-position: $dt-width+$dt-dd-space;
 
+// browse
+// @TODO change the colors; colors are now for testing the result
+$browse-background-color: $oc-red-3;
+$browse-background-over-color: $oc-red-5;
+$browse-code-background-color: $oc-red-7;
+
 // Mobile breakpoints
 @mixin mobile {
   @media screen and (max-width: 640px) {
