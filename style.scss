@@ -544,6 +544,118 @@ nav {
   }
 }
 
+//browse & search
+
+.search {
+  background-color: $search-background-color;
+  border: solid 1px $text-color;
+  border-radius: 2px;
+  font-size: 20px;
+}
+
+.browse {
+  margin-bottom: 1rem;
+
+  &-list {
+    &-post {
+      padding: 0.1rem;
+
+      &:hover {
+        background-color: $search-background-over-color;
+        border-color: transparent;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      a {
+        color: $base-color;
+
+        &:focus,
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      &-title {
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+
+      &-date {
+        color: $base-lighten-color;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.sort {
+  cursor: pointer;
+  background-color: $search-background-color;
+  border: solid 1px $text-color;
+  border-radius: 2px;
+  font-size: 20px;
+  color: $oc-gray-7;
+  margin-top: 5px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    content: "";
+    position: relative;
+    top: -10px;
+    right: -5px;
+  }
+
+  &.asc:after {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+    content: "";
+    position: relative;
+    top: 4px;
+    right: -5px;
+  }
+
+  &.desc:after {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black;
+    content: "";
+    position: relative;
+    top: -4px;
+    right: -5px;
+  }
+}
+
+.buttons {
+  cursor: pointer;
+  background-color: $search-background-color;
+  border: solid 1px $text-color;
+  border-radius: 2px;
+  font-size: 20px;
+  margin-top: 5px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
 // Footer
 .wrapper-footer {
   margin-top: 50px;

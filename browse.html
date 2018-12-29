@@ -14,12 +14,12 @@ title: Browse
 
   <div class="listjs">
     {% for post in site.posts reversed %}
-    <div class="archive-list-post">
+    <div class="browse-list-post">
       <a href="{{ post.url | absolute_url }}">
-      <span class="title archive-list-post-title">
+      <span class="title browse-list-post-title">
         {{ post.title }}
       </span>
-      <span class="date archive-list-post-date"> |
+      <span class="date browse-list-post-date"> |
         <time>{{ post.date | date: "%Y-%m-%d" }}</time> |
       </span>
       <span class="tags">{{ post.tags | join: ', ' }}</span>
