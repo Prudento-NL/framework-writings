@@ -8,7 +8,7 @@ permalink: /browse/
 
   <div class="browse">
     <input class="search" placeholder=" Search" />
-    <span class="sort-by">Sort by:</span>  
+    <span class="sort-by">Sort by:</span>
     <button class="sort" data-sort="title">title</button>
     <button class="sort" data-sort="date">date</button>
     <button class="sort" data-sort="tags">tags</button>
@@ -24,17 +24,8 @@ permalink: /browse/
         <span class="date browse-list-post-time"> |
           <time>{{ post.date | date: "%Y-%m-%d" }}</time> |
         </span>
+        <span class="tags">{{ post.tags | join: ', ' }}</span>
       </a>
-      <div <ul class="browse-list-post-tags">
-        {% for tag in post.tags %}
-        <li>
-          <a href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">
-            {{ tag }}
-          </a>
-        </li>
-        {% endfor %}
-        </ul>
-      </div>
     </div>
     {% endfor %}
   </div>

@@ -562,6 +562,11 @@ nav {
     &-post {
       padding: 0.1rem;
 
+      &:hover {
+      background-color: $search-background-over-color;
+      border-color: transparent;
+      }
+
       ul {
         list-style-type: none;
       }
@@ -576,10 +581,7 @@ nav {
       }
 
       &-title {
-        &:hover {
-          background-color: $search-background-over-color;
-          border-color: transparent;
-        }
+
       }
 
       &-time {
@@ -588,32 +590,14 @@ nav {
         font-weight: 300;
         margin-left: 3px;
       }
-
-      &-tags {
-        display: inline;
-        font-weight: 300;
-        font-size: $small-font-size;
-
-        li {
-          display: inline;
-          margin: 0;
-
-          > li:before {
-            content: "";
-          }
-
-          > a {
-            margin: 3px 3px 3px 0;
-            padding: 0.5px 4px;
-            color: $tag-index-label-color;
-            background-color: $tag-index-label-background-color;
-            border-radius: 3px;
-          }
-        }
-      }
     }
   }
 }
+.tags {
+  font-weight: 300;
+  font-size: $small-font-size;
+}
+
 .sort {
   cursor: pointer;
   background-color: $search-background-color;
