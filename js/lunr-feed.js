@@ -41,7 +41,16 @@ $(document).ready(function() {
     // Loop through, match, and add results
     for (var item in result) {
       var ref = result[item].ref;
-      var searchitem = '<div class="result"><div class="result-body"><a href="'+store[ref].link+'" class="post-title">'+store[ref].title+'</a><div class="post-date small">'+store[ref].category+' &times; '+store[ref].date+'</div><p>'+store[ref].excerpt+'</p></div>';
+      // original code in the line below
+      // var searchitem = '<div class="result"><div class="result-body"><a href="{{ site.baseurl }}' + store[ref].link + '" class="post-title">'+ store[ref].title + '</a><div class="post-date small">' + store[ref].category + ' &times; ' + store[ref].date + '</div><p>' + store[ref].excerpt + '</p></div>';
+      var searchitem = '<div class="result"><div class="result-body"><h2><a href="{{ site.baseurl }}'
++ store[ref].link
++ '" class="search-title">'
++ store[ref].title
++ '</a></h2><div class="search-time">'
+//+ store[ref].category + ' &times; '
++ store[ref].date + '</div><p>'
++ store[ref].excerpt + '</p></div>';
       resultdiv.append(searchitem);
     }
   });

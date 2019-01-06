@@ -552,6 +552,17 @@ nav {
   border-radius: 2px;
   font-size: 20px;
 }
+.search-title {
+color: $base-color;
+}
+
+.search-time {
+  color: $base-lighten-color;
+  font-size: $small-font-size;
+  font-weight: 300;
+  margin-left: 3px;
+}
+
 .sort-by{
   margin: 0 5px 0 15px;
 }
