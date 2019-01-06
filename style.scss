@@ -562,11 +562,6 @@ nav {
     &-post {
       padding: 0.1rem;
 
-      &:hover {
-      background-color: $search-background-over-color;
-      border-color: transparent;
-      }
-
       ul {
         list-style-type: none;
       }
@@ -581,7 +576,16 @@ nav {
       }
 
       &-title {
+        &:hover {
+          color: $link-color;
+          text-decoration: none;
+          cursor: pointer;
 
+          &:active,
+          &:hover {
+            color: $link-color;
+          }
+        }
       }
 
       &-time {
