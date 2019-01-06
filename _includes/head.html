@@ -1,17 +1,12 @@
 <head>
   <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }} – {{ site.domain }}</title>
   <!-- favicon - The simple way (one size and one link tag)-->
-  <link rel="shortcut icon" type="image/png" href="{{ site.favicon }}"
-
-  {% include meta.html %}
-  {% include fonts.html %}
-
-  <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <link rel="shortcut icon" type="image/png" href="{{ site.favicon }}" {% include meta.html %} {% include fonts.html %} <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-  <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  {% include top_button_head.html %}
+  {% include top_button_body.html %}
 </head>
